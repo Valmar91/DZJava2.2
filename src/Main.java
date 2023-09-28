@@ -6,16 +6,8 @@ public class Main {
         int score;
 
         score = 100;
-        deposit = 300;
-        if (deposit + score > base) {
-            score = deposit / 100 + score + deposit;
-        } else {
-            score = score + deposit;
-        }
-        System.out.println("На счёте: " + score);
-
-        score = 100;
         deposit = 1100;
+        
         if (deposit + score > base) {
             score = deposit / 100 + score + deposit;
         } else {
