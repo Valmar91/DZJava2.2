@@ -9,9 +9,13 @@ public class Main {
         deposit = 1100;
         
         if (deposit + score > base) {
-            score = deposit / 100 + score + deposit;
+            score = deposit/100 + score + deposit;
         } else {
             score = score + deposit;
+        }
+
+        if (score > base) {
+            System.out.println("Ваш бонус составил: " + deposit / 100);
         }
         System.out.println("На счёте: " + score);
     }
